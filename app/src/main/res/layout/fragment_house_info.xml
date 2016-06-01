@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tl_house_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            app:errorEnabled="true">
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tl_house_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            app:errorEnabled="true">
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="City Name"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tl_house_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            app:errorEnabled="true">
+
+            <EditText
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="State Code"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tl_house_zipcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            app:errorEnabled="true">
+
+            <EditText
+                android:id="@+id/zipcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Zipcode"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Spinner
+            android:id="@+id/type_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/housetype_array"
+            android:prompt="@string/housetype_prompt"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="4dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tl_num_bedroom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            app:errorEnabled="true">
+
+            <EditText
+                android:id="@+id/num_bedroom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Number of Bedroom"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tl_num_bathroom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            app:errorEnabled="true">
+
+            <EditText
+                android:id="@+id/num_bathroom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Number of Bathroom"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tl_sqrft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            app:errorEnabled="true">
+
+            <EditText
+                android:id="@+id/sqrft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Square Foot"
+                android:layout_marginBottom="4dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/next1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Next"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="4dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

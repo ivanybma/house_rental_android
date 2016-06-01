@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/listView_review_tenant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jack Kung"
+        android:focusable = "false"
+        android:focusableInTouchMode = "false"
+        />
+    <TextView
+        android:id="@+id/listView_review_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4/20/2016"
+        android:layout_alignParentRight="true"
+        android:focusable = "false"
+        android:focusableInTouchMode = "false"
+        />
+
+    <TextView
+        android:id="@+id/listView_review_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listView_review_tenant_name"
+        android:text="Rating: 4 starts"
+        android:focusable = "false"
+        android:focusableInTouchMode = "false"
+        />
+
+    <TextView
+        android:id="@+id/listView_review_descriptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listView_review_rating"
+        android:text="Very nice and luxurous house."
+        android:focusable = "false"
+        android:focusableInTouchMode = "false"
+        />
+
+</RelativeLayout>

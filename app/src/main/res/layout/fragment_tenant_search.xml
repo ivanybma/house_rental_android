@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tenant_search_layout">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:weightSum="10">-->
+
+        <!--<EditText-->
+            <!--android:layout_below="@+id/searchview"-->
+            <!--android:id="@+id/locationview"-->
+            <!--android:layout_weight="10"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="37dp"-->
+            <!--android:maxLines="1"-->
+            <!--android:hint="@string/currentlocation"-->
+            <!--android:background="@color/transparentWhite"-->
+            <!--app:layout_widthPercent="80%"-->
+            <!--android:drawableLeft="@drawable/ic_create_black_24dp"-->
+            <!--android:drawableRight="@drawable/ic_save_black_24dp"-->
+            <!--android:textColorHint="@android:color/holo_blue_dark"/>-->
+
+    <!--</LinearLayout>-->
+    <!-- scrolling bottom pane -->
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City Name"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="4dp"
+            android:maxLines="1"/>
+
+        <EditText
+            android:id="@+id/state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="State Code"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="4dp"
+            android:maxLines="1"/>
+
+        <Spinner
+            android:id="@+id/type_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/housetype_array"
+            android:prompt="@string/housetype_prompt"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/num_bedroom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number of Bedroom"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="4dp"
+            android:maxLines="1"/>
+
+        <EditText
+            android:id="@+id/num_bathroom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number of Bathroom"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="4dp"
+            android:maxLines="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+        <EditText
+            android:id="@+id/lowprice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:hint="Lowest Price"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="4dp"
+            android:inputType="number"
+            android:maxLines="1"/>
+            <EditText
+                android:id="@+id/highprice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:hint="Highest Price"
+                android:inputType="number"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="4dp"
+                android:maxLines="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+        <Button
+            android:id="@+id/tenantsearct"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Search"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="4dp"/>
+
+            <!--<Button-->
+                <!--android:id="@+id/settingapply"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="5"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:text="Apply"-->
+                <!--android:layout_marginTop="4dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_marginBottom="4dp"/>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

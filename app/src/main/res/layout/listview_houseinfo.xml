@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/listView_houseinfo_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/houserent"
+        >
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/listView_houseinfo_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/listView_houseinfo_img"
+        android:layout_alignParentTop="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        />
+
+    <TextView
+        android:id="@+id/listView_houseinfo_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/listView_houseinfo_city"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        />
+    <TextView
+        android:id="@+id/listView_houseinfo_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/listView_houseinfo_img"
+        android:layout_alignLeft="@+id/listView_houseinfo_city"
+        android:layout_below="@id/listView_houseinfo_city"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        />
+
+    <TextView
+        android:id="@+id/size_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listView_houseinfo_address"
+        android:layout_toEndOf="@+id/listView_houseinfo_img"
+        android:layout_alignLeft="@+id/listView_houseinfo_city"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="Broom/Bath:"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/listView_houseinfo_numOfBed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listView_houseinfo_address"
+        android:layout_toEndOf="@+id/size_lable"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView
+        android:id="@+id/slash_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_below="@id/listView_houseinfo_address"
+        android:layout_toRightOf="@+id/listView_houseinfo_numOfBed"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="/"
+        />
+
+    <TextView
+        android:id="@+id/listView_houseinfo_numOfBath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_below="@id/listView_houseinfo_address"
+        android:layout_toRightOf="@+id/slash_lable"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        />
+
+
+    <TextView
+        android:id="@+id/listView_houseinfo_descriptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_alignLeft="@+id/listView_houseinfo_city"
+        android:layout_below="@+id/listView_houseinfo_numOfBed" />
+        />
+
+    <TextView
+        android:id="@+id/listView_status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/listView_houseinfo_img"
+        android:layout_below="@+id/listView_houseinfo_descriptions"
+        android:layout_toRightOf="@+id/listView_houseinfo_img" />
+
+    <TextView
+        android:id="@+id/houseid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/landlordfbid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/postingdate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/sqrtft"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/lat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/lng"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

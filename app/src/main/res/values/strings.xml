@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Reatopia</string>
+    <string name="toggle_landlord">Login as Landlord</string>
+    <string name="toggle_tenant">Login as Tenant</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="housetype_prompt">Choose the Type of House</string>
+    <string name="currentlocation">Current location</string> 
+     <string name="search_result">result(s)</string> 
+    <string name="spinner_title">Select a Role</string>
+    <string name="expect_rent">Expected Monthly Rental Fee</string>
+    <string-array name="landlord_option">
+        <item>New Post</item>
+        <item>List of Posting</item>
+        <item>Log out</item>
+    </string-array>
+    <string-array name="housetype_array">
+        <item>All</item>
+        <item>Single House</item>
+        <item>Town House</item>
+        <item>Apartment</item>
+        <item>Condo</item>
+        <item>Mobile Home</item>
+    </string-array>
+</resources>
